@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Up</title>
+
+    <!-- == jQuery == -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    
+    <!--Bootstrap CDN CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ===== NAVBAR ====== -->
+
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand" href="#">
+        <!-- <img src="/" alt="logo" width="30" height="30" class="d-inline-block align-text-top"> -->
+        SKILL UP
+      </a>
+    </div>
+  </nav>
+
+  <section class="contact-form">
+
+    <div class="container">
+
+      <div class="logo_con" >
+          <!-- <img src="/logo.png" alt="" width="30" height="30" class="d-inline-block align-text-top"> -->
+          <h4>Skill Up Form</h4>
+      </div>
+  
+      <!-- <ul id="box"></ul> -->
+      <input type="text" id="name" class="input" placeholder="Enter your name..." />
+      <input type="text" id="email" class="input" placeholder="Enter your email..." />
+  
+      <!-- <ul id="box"></ul> -->
+      <br>
+      <br>
+      <label for="inputEmail4" class="form-label">Add Skills</label>
+      
+      <br>
+      <!-- <ul id="box"></ul> -->
+      <select name="skills" id="skills-name" class="dropdown" >
+
+        <!-- ===== Add all these Values using Ajax Call ===== -->
+      <!-- <select class="form-control" id="departmentsDropdown" name="departmentsDropdown"></select> -->
+        <!-- <option value="select-skill">Select Skill</option>
+        <option value="PHP">PHP</option>
+        <option value="MYSQL">MYSQL</option>
+        <option value="HTML-CSS">HTML-CSS</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Yii</option> -->
+      </select>
+  
+    <select name="levels-name" id="levels" class="dropdown" >
+        <option value="select-level">select level</option>
+        <option value="level1">level1</option>
+        <option value="level2">level2</option>
+        <option value="level3">level3</option>
+        <option value="level4">level4</option>
+        <option value="level5">level5</option>
+      </select>
+  
+      <input type="button" value="Add" id="btnClick" class="Addbtn" onclick="addMore()">    
+      <span id="addError"></span>
+  
+      <br><br>
+      <!-- <ul id="box"></ul> -->
+      <label for="inputEmail4" class="form-label">Selected Skills</label>
+      <ul id="written-box"></ul>
+      
+      <input type="button" value="Submit" class = "submitBtn" onclick="submit()">
+      <br>
+      <span id="submitError"></span>
+  
+    </div>
+
+  </section>
+
+  <h2 class="table-data"> INSERTED DATA</h2>
+  <hr class="hrr">
+  
+  <table id="submit-box">
+    <tr>
+      <th>Name</th>
+      <th>email</th>
+      <th>Skills with Level</th>
+      <th class="edit">Edit</th>
+    </tr>
+  </table>
+  
+    
+
+<!-- 
+
+      Sweet Alert CDN
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+
+  <!-- MAIN JS FILE-->
+
+  <script src="main.js"></script>
+    <!-- Bootstrap JS with Popper-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

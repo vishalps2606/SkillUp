@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+:root{
+
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #Ec4899;
+    --purple: #8B5Cf6;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-size: cover;
+    background: linear-gradient(45deg, var(--purple), var(--pink));
+}
+
+.navbar{
+
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+
+.container{
+    
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    width: 45%;
+    margin: 5% auto;
+}
+
+.container .logo_con{
+    text-align: center;
+    padding: 1rem 0rem 2rem 0.4rem;
+    display: flex;
+}
+
+.container .input{
+
+    width: 43%;
+    height: 35px;
+}
+
+.container .dropdown{
+    width: 43%;
+    height: 35px;
+}
+
+.container .Addbtn{
+    width: 50px;
+    height: 35px;
+}
+
+.container .submitBtn{
+
+    width: 30%;
+    height: 40px;
+}
+
+.container ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.container li{
+    color: green;
+}
+
+.container li a{
+    float: right;
+    columns: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container #addError{
+    color: red;
+    font-size: 16px;
+}
+
+.container #submitError{
+    color: red;
+    font-size: 16px;
+}
+
+input{
+    border-radius: 5px;
+    border-width: 0;
+}
+
+
+/* ==== table css === */
+
+.table-data{
+    text-align: center;
+    font-weight: 600;
+   text-decoration: underline;
+}
+
+.hrr{
+    width: 20%;
+    margin: auto;
+}
+
+table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 50px auto;
+}
+
+table, th, td{
+
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    padding: 5px; 
+}
+
+th{
+
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darker);
+    text-align: center;
+}
+
+td{
+
+    font-size: 18px;
+    color: var(--light);
+    text-align: center;
+}
+td:last-child{
+    color : rgb(184, 47, 47);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 720px){
+
+    .container{
+        width : 80%;
+    }
+}
